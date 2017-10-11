@@ -1,0 +1,7 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="Project 'kafka-streams-course'" />
+    <option name="defaultScopeName" value="Project 'kafka-streams-course'" />
+    <option name="SEARCH_SCOPE" value="Project 'kafka-streams-course'" />
+  </component>
+</application>
