@@ -21,37 +21,6 @@ how to deploy
 
 edit the source conf file 
 
-
-{
-   "name": "src_ods_gts2_trade_gts2_id",
-   "config": {
-       "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
-       "tasks.max": "5",
-       "connection.url": "jdbc:postgresql://192.168.35.241:5432/goldoffice?currentSchema=trade_gts2",
-       "connection.user": "office",
-       "connection.password": "Dev1234{}",
-       "mode": "incrementing",
-       "table.whitelist": "gts2deal,gts2order",
-       "incrementing.column.name": "id",
-       "validate.non.null": "true",
-       "topic.prefix": "ods_",
-       "incrementing.value": "-1",
-       "incrementing.step.value":"1000",
-       "timestamp.value": "1970-01-01 00:00:00",
-       "timestamp.step.day": "10",
-       "poll.interval.ms": "50000",
-       "table.poll.interval.ms": "60000",
-       "timestamp.delay.interval.ms": "5000",
-       "request.timeout.ms": "3100",
-       "offset.flush.interval.ms": "5000",
-       "heartbeat.interval.ms": "6000",
-       "session.timeout.ms": "3000",
-       "max.poll.records": "10001"
-   }
-}
-
-
-
 {
    "name": "src_test_id",
    "config": {
