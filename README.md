@@ -21,10 +21,10 @@ how to deploy
 
 edit the source conf file 
 
-{
-   "name": "src_test_id",
-   "config": {
-       "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+{ 
+   "name": "src_test_id", 
+   "config": { 
+       "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector", 
        "tasks.max": "5",
        "connection.url": "jdbc:postgresql://192.168.1.1:5432/test?currentSchema=test",
        "connection.user": "test",
